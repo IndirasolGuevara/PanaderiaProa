@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panaderia</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/170f29cd01.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="page">
+    <section id="header">
+      <nav class="container-nav" id="navbar">
+        <a href=""><img src="./img/Logo_Moderno_Marrón-removebg-preview__1_-removebg-preview-Photoroom.png-Photoroom.png" alt=""></a>
+        <div class="container-li"> 
+          <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a class="active" href="#">Nosotros</a></li>
+            <li><a class="active" href="#">Promociones</a></li>
+            <li><a class="active" href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="img-pan">
+        <div class="superposicion"></div>
+        <div class="text-page">
+          <h1>Panadería & Pastelería</h1>
+          <h2>100% artesanal</h2>
+        </div>
+        <div class="local-scroll">
+          <a href="#about" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="about-section" id="about">
+      <div class="img-section">
+        <img src="./img/Logotipo Panadería Croissant colores marrones (2)-Photoroom.png-Photoroom.png" alt="">
+      </div>
+      <div class="info-about">
+        <br>
+        <p>Nuestra filosofía es simple: producción artesanal, los mejores ingredientes y, lo más importante, amor por lo que hacemos.</p>
+      </div>
+    </section>
+  </div>
+  <script>
+        window.addEventListener('scroll', function() {
+        var navbar = document.getElementById('navbar');
+        if (window.scrollY > 200) { // Cambia 50 por la cantidad de desplazamiento que desees
+          navbar.style.backgroundColor = 'rgba(47, 59, 103)'; // Cambia el color de fondo al hacer scroll
+      } else {
+        navbar.style.backgroundColor = 'transparent'; // Vuelve al color de fondo transparente cuando se regresa arriba
+      }
+});
+  </script>
+</body>
+</html>

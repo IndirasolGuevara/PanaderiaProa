@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.page {
+  position: relative;
+}
+
+.text-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  
+}
+
+.text-page h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+}
+
+.text-page h2 {
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+
+.fas {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: white;
+}
+
+.container-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 24%;
+  padding: 20px;
+  background-color: rgba(226, 223, 223, 0.145);
+  z-index: 2; /* Asegura que esté por encima de la imagen de fondo */
+}
+#navbar {
+  position: fixed;
+  background-color: rgba(47, 59, 103, 0.707); 
+  z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+  transition: background-color 0.60s ease; /* Transición suave del color de fondo */
+}
+
+.active{
+  text-decoration: none;
+  color: #fff;
+}
+
+.container-nav img {
+  width: 150px;
+}
+
+.container-li ul {
+  display: flex;
+}
+
+.container-li ul li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.img-pan {
+  position: relative;
+  height: 100vh;
+  background-image: url("./img/cake-8233676_1280.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fff;
+  height: 20%;
+
+}
+
+.img-section img {
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.info-about {
+  text-align: center;
+  
+}
+
+.info-about p {
+  font-size: 18px;
+}
+.superposicion{
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.336);
+  height: 100%;
+}
+@media screen and (max-width: 533px) {
+  .item {
+    flex-basis: 100%;
+    
+}
+
+}
