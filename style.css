@@ -64,6 +64,9 @@
   text-decoration: none;
   color: #fff;
 }
+.active:hover{
+  color: #000000;
+}
 
 .container-nav img {
   width: 150px;
@@ -77,6 +80,8 @@
   list-style-type: none;
   margin-right: 20px;
 }
+
+
 
 .img-pan {
   position: relative;
@@ -113,6 +118,27 @@
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.336);
   height: 100%;
+}
+.imagenes-tortas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Para centrar las imágenes horizontalmente */
+  justify-content: space-between;
+  margin-top: 9%;
+ 
+}
+
+.torta {
+  margin-left: 20px; /* Espacio entre las imágenes */
+}
+
+.torta img {
+  max-width: 100%; /* Para asegurarse de que las imágenes no sobrepasen su contenedor */
+  /* Para mantener la proporción de aspecto */
+}
+
+.torta:hover{
+  filter: grayscale(18%) brightness(80%);
 }
 @media screen and (max-width: 533px) {
   .item {
