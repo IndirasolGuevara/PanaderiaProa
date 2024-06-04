@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(241, 227, 235);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .producto {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    width: calc(100% - 32px); /* default for small screens */
+    margin: auto;
+    text-align: center;
+    font-family: 'Times New Roman', 'Brixton Sans', serif;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  .producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .precio {
+    color: rgb(14, 13, 13);
+    font-size: 22px;
+  }
+  
+  .producto button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: rgb(238, 204, 153);
+    background-color: rgb(218, 64, 136);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+  }
+  
+  .producto button:hover {
+    opacity: 0.7;
+  }
+  
+  @media (min-width: 600px) {
+    .producto {
+        width: calc(50% - 32px);
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .producto {
+        width: calc(33.333% - 32px);
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .producto {
+        width: calc(25% - 32px);
+    }
+  }
+  

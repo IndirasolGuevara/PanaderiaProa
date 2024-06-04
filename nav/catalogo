@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/catalogo.css">
+    <title>Document</title>
+ </head>
+ <body>
+    <div class="container">
+        <div class="producto">
+            <img src="assets/croissant.jpg" alt="Croissant Relleno">
+            <h1>Croissant Relleno</h1>
+            <p class="precio">$1.200</p>
+            <p>Dulce masa francesa rellena del sabor de tu preferencia</p>
+            <p><button>Contactarnos</button></p>
+        </div>
+        <div class="producto">
+            <img src="assets/lemonpie.jpg" alt="Shot Lemon Pie">
+            <h1>Shot Lemon Pie</h1>
+            <p class="precio">$900</p>
+            <p>Cama de masa de vainilla con relleno de mousse de limón y merengue italiano</p>
+            <p><button>Contactarnos</button></p>
+        </div>
+        <div class="producto">
+            <img src="assets/shotoreo.jpg" alt="Shot Oreo">
+            <h1>Shot Oreo</h1>
+            <p class="precio">$950</p>
+            <p>Base de crocantes galletas Oreo combinadas con dulce de leche y crema</p>
+            <p><button>Contactarnos</button></p>
+        </div>
+        <div class="producto">
+            <img src="assets/chocotorta.jpg" alt="Chocotorta">
+            <h1>Chocotorta</h1>
+            <p class="precio">$1000 prc $7000</p>
+            <p>El postre más aclamado del país para compartir o comer individual</p>
+            <p><button>Contactarnos</button></p>
+        </div>
+        <div class="producto">
+            <img src="assets/cupcake.jpg" alt="Cupcakes">
+            <h1>Cupcakes</h1>
+            <p class="precio">$500 $6000 x doc.</p>
+            <p>Rellenos o no, con la cobertura de tu elección</p>
+            <p><button>Contactarnos</button></p>
+        </div>
+      </div>
+      <div class="producto">
+        <img src="assets/cupcake.jpg" alt="img1"style="width:100%">
+        <h1>Tarta de Frutilla</h1>
+        <p class="Precio">$10000 (24cm de diametro)</p>
+        <p>Masa de vainilla con relleno de pulpa de frutilla y frutillas con crema chantilli</p>
+        <p><button>Contactarnos</button></p>
+      </div>
+      <div class="producto">
+        <img src="assets/cupcake.jpg" alt="img1"style="width:100%">
+        <h1>Lemon pie</h1>
+        <p class="Precio">$9500 (24cm de diametro)</p>
+        <p>Masa de vainilla con relleno de mouse de limon con cobertura de merengue italiano</p>
+        <p><button>Contactarnos</button></p>
+      </div>
+
+    </div>
+ </body>
+ </html>
