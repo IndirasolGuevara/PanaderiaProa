@@ -97,6 +97,7 @@
   justify-content: center;
   background-color: #fff;
   height: 20%;
+  margin-top: 80px;
 
 }
 
@@ -140,6 +141,9 @@
 .torta:hover{
   filter: grayscale(18%) brightness(80%);
 }
+
+
+
 @media screen and (max-width: 533px) {
   .item {
     flex-basis: 100%;
