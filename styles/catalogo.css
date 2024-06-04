@@ -36,12 +36,9 @@ body {
     color: #000000;
   }
   
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    padding: 16px;
+.container {
+    margin-left: -700px;
+    
   }
   
   .producto {
@@ -54,6 +51,7 @@ body {
     background-color: #fff;
     padding: 16px;
     border-radius: 8px;
+    margin-top: 40px;
   }
   
   .producto img {
