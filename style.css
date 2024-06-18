@@ -98,6 +98,7 @@
   background-color: #fff;
   height: 20%;
   margin-top: 80px;
+  
 
 }
 
@@ -105,6 +106,7 @@
   max-width: 100%;
   height: auto;
   align-items: center;
+  margin-right:180px ;
 }
 
 .info-about {
@@ -114,6 +116,8 @@
 
 .info-about p {
   font-size: 18px;
+  margin-top: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .superposicion{
   width: 100vw;
