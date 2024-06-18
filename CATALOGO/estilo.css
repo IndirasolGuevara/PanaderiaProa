@@ -241,3 +241,35 @@ body {
 .info .fila button:hover{
     border: #000;
 }
+.container-nav{
+    width: 100vw;
+    height: 20%;
+    background-color: rgb(47, 59, 103);;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.img-nav{
+    width: 100px;
+}
+.container-li ul li {
+    list-style-type: none;
+    margin-right: 20px;
+  }
+.container-li ul {
+    display: flex;
+  }
+
+.active{
+    text-decoration: none;
+    color: #fff;
+  }
+.active:hover{
+    color: #000000;
+  }
+  
+.container {
+    margin-left: -700px;
+    
+  }

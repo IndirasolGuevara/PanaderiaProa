@@ -1,57 +1,145 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/catalogo.css">
+    <link rel="stylesheet" href="../CATALOGO/estilo.css">
     <script src="https://kit.fontawesome.com/170f29cd01.js" crossorigin="anonymous"></script>
-    <title>Document</title>
- </head>
- <body>
-    <nav class="container-nav" id="navbar">
-          <a href=""><img class="img-nav" src="../img/Logo_Moderno_Marrón-removebg-preview__1_-removebg-preview-Photoroom.png-Photoroom.png" alt=""></a>
-          <div class="container-li"> 
-            <ul>
-              <li><a class="active" href="../index.html#home">Home</a></li>
-              <li><a class="active" href="../index.html#about">Nosotros</a></li>
-              <li><a class="active" href="#catalogo">Catalogo</a></li>
-              <li><a class="active" href="../index.html#footer">Contacto</a></li>
+    <title>CALZADO DEPORTIVO</title>
+</head>
+<body>
+  <nav class="container-nav" id="navbar">
+    <a href=""><img class="img-nav" src="../img/Logo_Moderno_Marrón-removebg-preview__1_-removebg-preview-Photoroom.png-Photoroom.png" alt=""></a>
+    <div class="container-li"> 
+      <ul>
+        <li><a class="active" href="../index.html#home">Home</a></li>
+        <li><a class="active" href="../index.html#about">Nosotros</a></li>
+        <li><a class="active" href="#catalogo">Catalogo</a></li>
+        <li><a class="active" href="../index.html#footer">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+    <div class="menu-carrito">
+        <button onclick="toggleCarrito()">
+            <img src="../CATALOGO/carrito.png" alt="Carrito" class="icono-carrito">
+        </button>
+        <div class="carrito" id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito">
+                <!-- Productos añadidos se mostrarán aquí -->
             </ul>
-          </div>
-      </nav>
-    <div class="container">
-        <div class="producto">
-            <img src="../img/cake-8233676_1280.jpeg" alt="Croissant Relleno">
-            <h1>Croissant Relleno</h1>
-            <p class="precio">$1.200</p>
-            <p>Dulce masa francesa rellena del sabor de tu preferencia</p>
-            <p><button>Contactarnos</button></p>
+            <p>Total: $<span id="total">0</span></p>
+            <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+            <button onclick="procesarCompra()" id="procesar">Procesar Compra </button>
         </div>
-        <div class="producto">
-            <img src="../img/torta3.jpg" alt="Shot Lemon Pie">
-            <h1>Shot Lemon Pie</h1>
-            <p class="precio">$900</p>
-            <p>Cama de masa de vainilla con relleno de mousse de limón y merengue italiano</p>
-            <p><button>Contactarnos</button></p>
-        </div>
-        <div class="producto">
-            <img src="../img/torta4.jpg" alt="Shot Oreo">
-            <h1>Shot Oreo</h1>
-            <p class="precio">$950</p>
-            <p>Base de crocantes galletas Oreo combinadas con dulce de leche y crema</p>
-            <p><button>Contactarnos</button></p>
-        </div>
-        <div class="producto">
-            <img src="../img/mini torta.jpg" alt="Chocotorta">
-            <h1>Chocotorta</h1>
-            <p class="precio">$1000 prc $7000</p>
-            <p>El postre más aclamado del país para compartir o comer individual</p>
-            <p><button>Contactarnos</button></p>
+    </div>
+
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="assets/si.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Croissant Relleno</p>
+                    <span class="precio">$ 1.300</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="assets/si.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Shot Lemon Pie</p>
+                    <span class="precio">$ 1.200</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="assets/si.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Shot Oreo</p>
+                    <span class="precio">$ 1.500</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="assets/si.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Chocotorta</p>
+                    <span class="precio">$10000</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="assets/si.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Cupcakes</p>
+                    <span class="precio">$500</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="assets/si.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Tarta de Frutilla</p>
+                    <span class="precio">$ 2.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="assets/si.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Lemon pie</p>
+                    <span class="precio">$ 2.500</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="assets/si.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Galletas</p>
+                    <span class="precio">$600</span>
+                </div>
+            </div> 
         </div>
 
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">NIKE MODEL 1</h2>
+                <p id="descripcion">Descripción Modelo 1</p>
+                <span class="precio" id="precio">$ 130</span>
+                <div class="fila">
+                    <div class="size">
+                        <label for="">CANTIDAD</label>
+                        <select name="" id="talla">
+                            <option value="40">1</option>
+                            <option value="42">2</option>
+                            <option value="44">3</option>
+                            <option value="46">4</option>
+                            <option value="46">5</option>
+                            <option value="46">6</option>
+                            <option value="46">7</option>
+                            <option value="46">8</option>
+                            <option value="46">9</option>
+                            <option value="46">10</option>
+                            <option value="46">11</option>
+                            <option value="46">12</option>
+                        </select>
+                    </div>
+                    <button onclick="agregarAlCarrito()">AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="mensaje-modal" class="modal">
+        <div class="modal-contenido">
+            <span id="modal-icono"></span>
+            <p id="mensaje-texto"></p>
+        </div>
     </div>
-    <footer style="background-color:rgb(47, 59, 103); padding: 20px; text-align: center; width: 100vw;margin-top: 40px;">
+    <footer id="footer" style="background-color:rgb(47, 59, 103); padding: 20px; text-align: center; margin-top: 80px;">
       <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
         <img src="../img/Logo_Moderno_Marrón-removebg-preview__1_-removebg-preview-Photoroom.png-Photoroom.png" alt="Logo" style="width: 70px; height: 70px; margin-right: 10px;">
         <h3 style="margin: 0;">Sweet Slice</h3>
@@ -65,5 +153,7 @@
       </div>
       <p style="margin-top: 10px;">© 2024 Todos los derechos reservados.</p>
     </footer>
- </body>
- </html>
+
+    <script src="../CATALOGO/script.js"></script>
+</body>
+</html>
